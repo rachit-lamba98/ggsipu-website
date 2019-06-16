@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=[" ","January","February","March","April","May","June","July","August","September","October","November","December"];$("#jump-button").click(function(){var e=$("#date-input").val();if(e!=null&&e.length==10){var f=e.split("/");var d=f[0],b=f[1],c=f[2];window.location=("/"+c+"/"+a[parseInt(d)]+"/"+parseInt(b))}})});

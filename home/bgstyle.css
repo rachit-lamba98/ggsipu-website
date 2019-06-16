@@ -1,0 +1,11 @@
+
+A { text-decoration:none;}
+
+
+A:hover	{color: red;background-color:#eeeeee;}
+ .tabb { font-weight:bold; font-size:14px; font-family:Arial,Helvetica;}
+ .tan {FONT-SIZE: 12px; COLOR: navy; FONT-FAMILY: Arial,Helvetica; TEXT-ALIGN: center}
+ .tann {FONT-SIZE: 14px; COLOR: navy; FONT-FAMILY: Arial,Helvetica; TEXT-ALIGN: center}
+
+a:hover{text-decoration: overline;}
+a:hover{text-decoration: underline;}

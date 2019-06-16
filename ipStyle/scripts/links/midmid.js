@@ -1,0 +1,10 @@
+document.writeln(' <p>');
+document.writeln(' <a href="#">Employee Login</a> |');
+document.writeln(' <a href="#">Events / Annoucement</a> |');
+document.writeln(' <a href="#">Contact Us</a>');
+document.writeln(' </p>');
+document.writeln(' <p>');
+document.writeln(' <a href="#">Cultural Activities</a> |');
+document.writeln(' <a href="#">Sports @ GGSIPU</a> |');
+document.writeln(' <a href="#">Scheme / Syllabus</a>');
+document.writeln(' </p>');

@@ -1,0 +1,9 @@
+document.writeln(' <li><a href="/">Home</a></li> ');
+document.writeln(' <li><a href="/vc/vc_ipu.htm">Vice Chancellor</a></li>');
+document.writeln(' <li><a href="/academics/academicsmain.htm">Admission</a></li>');
+document.writeln(' <li><a href="/adminis/adminismain.htm">Administration</a></li> ');
+document.writeln(' <li><a href="/norms/normordmain.htm">Statutory & Ordinances/</a></li> ');
+document.writeln(' <li><a href="/accounts/accountsmain.htm">Accounts</a></li> ');
+document.writeln(' <li><a href="http://ggsipuresults.nic.in/ipu//">Examinations</a></li>');
+document.writeln(' <li><a href="/urc/digital.htm">Library</a></li>');
+document.writeln(' <li><a href="/schools/schoolsmain.htm">Schools/Centres</a></li>');

@@ -1,0 +1,10 @@
+diff a/team.html b/team.html	(rejected hunks)
+@@ -151,7 +151,7 @@
+ 						<article class="box1 post"><a href="https://www.facebook.com/unknwn.abhitak" class="image featured"><img src="images/team/rahul.jpg" alt="" /><header><h3>Rahul Thakur</h3></a><p1>Social Media</p1></header></article>
+ 					</div>
+ 					<div class="3u">
+-						<article class="box1 post"><a href="https://www.facebook.com/shubhdeep.singh.77" class="image featured"><img src="images/team/shubhdeep.jpg" alt="" /><header><h3>Shubhdeep Singh</h3></a><p1>Chief Editor</p1></header></article>
++						<article class="box1 post"><a href="https://www.facebook.com/shubhdeep.singh.77" class="image featured"><img src="images/team/shubhdeep.jpg" alt="" /><header><h3>Shubhdeep Singh</h3></a><p1> Editor in chief</p1></header></article>
+ 					</div>
+ 					<div class="3u">
+ 						<article class="box1 post"><a href="https://www.facebook.com/somya.khera" class="image featured"><img src="images/team/somya.jpg" alt="" /><header><h3>Somya Khera</h3></a><p1>Editor</p1></header></article>

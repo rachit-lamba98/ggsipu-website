@@ -1,0 +1,73 @@
+document.writeln('<link rel="stylesheet" type="text/css" href="dropdwnmenu.css">');
+document.writeln('<table align=center><tr><td>')
+document.writeln('<ul class="pureCssMenu pureCssMenum">');
+
+document.writeln('	<li class="pureCssMenui"><a class="pureCssMenui" href="/" title="University Home">Home</a></li>');
+
+
+document.writeln('	<li class="pureCssMenui"><a class="pureCssMenui" href="/adminis/adminismain.htm" title="Administration"><span>Administration</span><![if gt IE 6]></a><![endif]>');
+document.writeln('	<ul class="pureCssMenum">');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/vc/vc_ipu.htm" title="Vice Chancellor">Vice Chancellor</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/accounts/accountsmain.htm" title="Accounts">Accounts</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/establish/establishmain.htm" title="Personnel Branch">Personnel Branch</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/planingbranch/plngbranchmain.htm" title="Planing & Policy Branch (RTI & Legel)">  Planing & Policy Branch</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/genadmin/genadminmain.htm" title="General Administration">General Administration</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/uwd/uwdmain.htm" title="University Works Division">University Works Division</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/estate/estatesecmain.htm" title="Estate">Estate</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/affiliates/afliliatesmain.htm" title="Estate">Affiliates</a></li>');
+document.writeln('	</ul>');
+document.writeln('	</li>');
+document.writeln('	<li class="pureCssMenui"><a class="pureCssMenui" href="/academics/academicsmain.htm" title="Academic"><span>Academic</span><![if gt IE 6]></a><![endif]>');
+document.writeln('	<ul class="pureCssMenum">');
+
+
+
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/cet2015adm/cet2015admmain.htm" title="Admission  Home"><span>Admission 2015</span><![if gt IE 6]></a><![endif]>');
+document.writeln('		<ul class="pureCssMenum">');
+document.writeln('			<li class="pureCssMenui"><a class="pureCssMenui" href="/cet2015adm/cet2015admmain.htm" title="Admission 2014">Admission 2015</a></li>');
+document.writeln('		</ul>');
+document.writeln('		</li>');
+
+
+
+
+//document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/cet2012/adm2012main.htm" title="Admission 2012"><span>Admission 2012</span><![if gt IE 6]></a><![endif]>');
+//document.writeln('		<ul class="pureCssMenum">');
+//document.writeln('			<li class="pureCssMenui"><a class="pureCssMenui" href="/consl2012/List2012students/list2012studentsmain.htm" title="Admission List - 2012 ">Admission List - 2012</a></li>');
+//document.writeln('			<li class="pureCssMenui"><a class="pureCssMenui" href="/cet2013consl/seat2012status/seat2012statusmain.htm" title="Seat Status - 2012 ">Seat Status - 2012</a></li>');
+//document.writeln('			<li class="pureCssMenui"><a class="pureCssMenui" href="/consl2012/refund2012/refund2012main.htm" title="Fee Refund Status - 2012">Fee Refund Status - 2012</a></li>');
+//document.writeln('		</ul>');
+
+
+document.writeln('		</li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/academics/academicsmain.htm" title="Admission Branch">Admission Branch</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/AcadCoord/acadcordmain.htm" title="Academic Coordination ">Academic Coordination </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/acadaffair/acadaffairmain.htm" title="Academic Affairs ">Academic Affairs </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/int_affairs/int_aff_main.htm" title="International Affairs">International Affairs</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/researchcons/rcmain.htm" title="Research & Consultancy ">Research & Consultancy </a></li>');
+document.writeln('	</ul>');
+document.writeln('	</li>');
+document.writeln('	<li class="pureCssMenui"><a class="pureCssMenui" href="/studentswelf/stdwelfaremain.htm" title="Students Section"><span>Students</span><![if gt IE 6]></a><![endif]>');
+document.writeln('	<ul class="pureCssMenum">');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/studentswelf/stdwelfaremain.htm" title="Students Welfare ">Students Welfare </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/schools/schoolsmain.htm" title="Schools / Centres">Schools / Centres</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="http://ggsipuresults.nic.in/ipu//" title="Examinations ">Examinations </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/urc/digital.htm" title="Library ">Library </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/course/main.htm" title="Programmes">Acdemic Programmes</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/UnivSyllabus/UnivSyllabusMain.htm" title="Scheme / Syllabus ">Scheme / Syllabus </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/seminar/seminarmain.htm" title="Seminar / Workshop ">Seminar / Workshop </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/sports/sportmain.htm" title="Sports Activities">Sports</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/home/extracurmain.htm" title="Cultural Activities">Cultural Activities</a></li>');
+document.writeln('	</ul>');
+document.writeln('	</li>');
+document.writeln('	<li class="pureCssMenui"><a class="pureCssMenui" href="/newmsg/latestmsg.htm" title="Notices/Circulars"><span>Information</span><![if gt IE 6]></a><![endif]>');
+document.writeln('	<ul class="pureCssMenum">');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/newmsg/latestmsg.htm" title="Notices/Circulars">Notices/Circulars</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/store/storemain.htm" title="Tender ">Tender </a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/establish/advrecruitment/Recruitment_main.htm" title="Job Opportunity">Job Opportunity</a></li>');
+document.writeln('		<li class="pureCssMenui"><a class="pureCssMenui" href="/contact/contactmain.htm" title="Contact Us">Contact Us</a></li>');
+document.writeln('	</ul>');
+document.writeln('	</li>');
+document.writeln('	<li class="pureCssMenui"><a class="pureCssMenui" href="/contact/contactmain.htm" title="University Home">Contact Us</a></li>');
+document.writeln('</ul>');
+document.writeln('</td></tr></table>')

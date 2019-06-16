@@ -1,0 +1,15 @@
+/* CSS Document */
+
+tr:nth-child(odd)    { background-color:#eee; }
+tr:nth-child(even)    { background-color:#fff; }
+
+
+window.addEvent('domready', function() {
+  var count = 0;
+  $$('table.shade-table tr').each(function(el) {
+    el.addClass(count++ % 2 == 0 ? 'odd' : 'even');
+  });
+});
+
+
+

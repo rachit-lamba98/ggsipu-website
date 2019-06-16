@@ -1,0 +1,18 @@
+/* CSS Document */
+
+
+tr:nth-child(odd)  
+  { background-color:#eee; }
+tr:nth-child(even) 
+  { background-color:#fff; }
+th
+  { background-color:blue;
+color:white;
+}
+
+table, td, th
+{
+border:1px solid #BAC8F6;
+padding:5px;
+cellspacing:0px;
+}

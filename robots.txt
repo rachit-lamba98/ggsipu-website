@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /search
+Disallow: /writedata
+Disallow: /writereaddata
+Disallow: /urc
+Disallow: /accounts
+Disallow: /admisssion2016
+Disallow: /aictediclosure
+Disallow: /upload

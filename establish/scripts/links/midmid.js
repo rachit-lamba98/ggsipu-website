@@ -1,0 +1,16 @@
+document.writeln(' <p>');
+document.writeln(' <a href="/home/emplogin.htm">Employee Login</a> |');
+document.writeln(' <a href="/newmsg/latestmsg.htm">Events / Annoucement</a> |');
+document.writeln(' <a href="/contact/contactmain.htm">Contact Us</a>');
+document.writeln(' </p>');
+document.writeln(' <p>');
+document.writeln(' <a href="/home/extracurmain.htm">Cultural Activities</a> |');
+document.writeln(' <a href="/sports/sports2012/sport2012main.htm">Sports @ GGSIPU</a> |');
+document.writeln(' <a href="/UnivSyllabus/UnivSyllabusMain.htm">Scheme / Syllabus</a>');
+document.writeln(' </p>');
+document.writeln(' <p>');
+document.writeln(' <a href="/establish/advrecruitment/Recruitment_main.htm">Job Opportunity</a> |');
+document.writeln(' <a href="/store/storemain.htm">Tender</a> |');
+document.writeln(' <a href="/seminar/seminarmain.htm">Seminar / Workshop</a>');
+document.writeln(' ');
+document.writeln(' </p>');

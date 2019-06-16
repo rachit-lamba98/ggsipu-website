@@ -1,0 +1,1240 @@
+  <!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="theme-color" content="#0972b7">
+     <link rel="icon" sizes="192x192" href="img/res.png">
+        <title>ICCTICT-2016</title>
+    <link rel="stylesheet" src="css/font.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/boot.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+    <script type="text/javascript" src="js/ember.js"></script>
+    <script type="text/javascript" src="js/ember-data.js"></script>
+    <script>
+     $(function(){
+         
+$(document).ready(function () {
+  $("#topul li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
+        var h = window.innerWidth;
+         console.log(h);
+         var fixHeader;
+         if(h > 767) {
+             fixHeader =250;
+         }
+         else if (h > 520 && h <= 767) {
+            fixHeader = 120;
+         }
+         else if (h <= 520) {
+             fixHeader = 40;
+         }
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= fixHeader && window.innerWidth>767 ) {
+        
+          $("#scrollogo").css("display","block");
+           $('nav').addClass('navbar-fixed-top');
+        // $("#headbanner").css("display","none");
+        }
+        else {
+    
+            $("#scrollogo").css("display","none");
+            $('nav').removeClass('navbar-fixed-top');
+            $("#headbanner").css("display","block");
+
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/maxcdn.css"/>
+    <script type="text/javascript" src="js/app.js"></script>
+	
+</head>
+<body style="background:#e8eaf6;">
+<script type='text/x-handlebars' data-template-name='application'>   
+    
+<div id="overlay">
+</div>
+<div id="frame">
+<center><img src="img/" class="thumbnail" id="mainimg"/></center>
+    <i class="fa fa-close fa-2x" style="position:fixed;top:4%;left:82%;cursor:pointer;" id="cross"></i>
+    <p id="abh2" class="disp keynote">
+				Dr. Abhijit Sen holds a PhD. from McMaster University, Hamilton, Ontario, Canada and Master of Science degree from University of California, Berkeley, USA, B.Tech in Electrical Engineering from Indian Institute of Technology, Kharagpur, India. He has over 30 years of academic and administrative experience at Kwantlen Polytechnic 
+University. He served as a chair of the department for over 14 years. Abhijit has also been a visiting professor at Waikato University, Hamilton, New Zealand, and Munich University of Applied Sciences, Germany, Centre for Development of Advanced Computing, India, and North China Institute of Aerospace Engineering, China. 
+ 
+His current research interests are in the areas of Wireless Networking and Security, Radio Frequency Identification (RFID), Computing Education and Teaching Methodologies, Distributed Systems and Databases.
+
+				</p>
+    <p id="bim2"  class="disp keynote">
+				Dr Bimlesh Wadhwa has spent more than 24 years researching and teaching in the area of Software Engineering. She holds an MTech and a PhD in Software Engineering. Currently a Senior Lecturer, she has been a Faculty at the School of Computing, National University of Singapore since year 2000. Her current research interests includes innovative pedagogy of Software Engineering and Human Computer Interactions. She has published several papers in International conferences and journals. With extremely Rich Exposure & Experience of  Teaching, Curriculum Design, and Research  in Computer  Science makes Dr Bimlesh Wadhwa a very Unique & Rare class of Educator.
+				</p>
+    
+    <p id="lui2"  class="disp keynote">
+				Dr. Luiz Fernando Capretz has vast experience in the software engineering field as practitioner, manager and educator. Before joining the University of Western Ontario (Canada), he worked at both technical and managerial levels, taught and did research on the engineering of software in Brazil, Argentina, England, Italy, Japan and the United Arab Emirates since 1981. He has authored over 200 academic papers on software engineering in leading international journals and conference proceedings. He is a senior member of IEEE, a distinguished member of the ACM, a MBTI Certified Practitioner, and a Certified Professional Engineer in Canada (P.Eng.). His current research interests are software engineering, human aspects of software engineering, software estimation, software product lines, and software engineering education. Besides work, he enjoys his family life, skiing and playing soccer. 
+				</p>
+    <p id="pra2"  class="disp keynote">
+				Dr. Prabhat. K. Mahanti joined the University of New Brunswick, Saint John faculty in December, 2001. Previous to his appointment as Professor at UNB, Dr.Mahanti was the Chair and Professor of Computer Science and Engineering Department, Birla Institute of Technology, India.He has published over 100 research papers in referred journals and conference proceedings including book chapters. He actively participates in numerous technical conferences; including serving as a conference chair and reviewers on many of them. Currently, he is on the editorial board for the Computer and Informatics- Slovak Academy of Sciences, Slovakia, International Journal of Computing and ICT Research-Uganda, Africa, International Journal of Network and Distributed Systems-Switzerland, and the Journal of Computing and Information Technology-Croatia. He was also the Editor-in-Chief, Journal of Computer, Finland until December 2014.
+				</p>
+    
+    	<p id="san2"  class="disp keynote">
+Sanjay Misra is Professor of computer engineering at Covenant University, OTA, Nigeria. He has 21 years of experience in academic administration and researches in various universities in Asia, Europe and Africa. He has author/coauthor in more than 170 papers- (with colleagues from nearly 20 countries) and majority of the publications are in ISI Web of Sciences, He got several awards for outstanding publications. Recently, Institute of Engineering and Technology(IET), United Kingdom awarded him ‘2014 IET Software Premium Award’  for Best Paper published in last two years. He has delivered 23 plenary and keynote speeches ( in IEEE, Springer, Elsevier sponsored conferences) and 33 invited talks (workshops/seminars/lecture) in various universities and institutions in more than 30 Countries. He is editor in chief of the book series on Advances in IT Personals and Project management (IGI Global), author of 1 book and editor (one of) in 20 Lecture Notes in Computer Science (Springer), 5 IEEE conference proceedings. He was General Chair of 6th IEEE ICAST: 2014 and founder chair of 3 annual international workshops: Software Engineering Process and Applications (SEPA), & Software Quality(SQ) (published by Springer, Tools and Techniques in Software Development Process (published by  IEEE).
+				</p>
+			
+				<p id="deb2"  class="disp keynote">
+				Dr. Narayan C. Debnath is a Full Professor and Chairman of Computer Science at Winona State University, Minnesota, USA.  He is also serving as the Director and Past President of the International Society for Computers and Their Applications (ISCA).  Dr. Debnath is a recipient of a Doctorate degree in Computer Science and a Doctorate degree in Applied Physics (Electrical Engineering). In the past, he served as the President, Vice President, and Conference Coordinator of the International Society for Computers and Their Applications (ISCA).  Professor Debnath has made numerous teaching and research presentations at various national and international conferences, industries, and teaching and research institutions in Africa, Asia, Australia, Europe, North America, and South America.  He has been serving as an international teaching and research advisor/coordinator of the Master of Software Engineering Program at the National Universities in Argentina, South America, since 2000.  
+				</p>
+    
+</div>    
+    
+<div class="container-fluid ">
+<div class="row">
+<div class="col-md-12 ">
+
+    <div id="headbanner" class="row default-primary-color" style="display:block;">
+<div class="col-md-12 zeropad whitetext">
+
+<div style="width:15vw; float:left; "><img src="img/icctict_logo.png" class="img-responsive"></img></div>
+				<div style="width:50vw; float:left;  padding: 5px 5px 5px 5px">
+                    <div id="headname" style="color:white; font-size:7vw; padding:2px 2px 2px 2px;"><strong>ICCTICT<small><sup> 2016</sup></small></strong></div>
+					<div id="header1" style="padding: 1px 1px 1px 1px">
+                    <div style="font-size: 1vmax; border-bottom:1px solid white;">INTERNATIONAL CONFERENCE ON COMPUTATIONAL TECHNIQUES IN INFORMATION AND COMMUNICATION TECHNOLOGIES</div>
+					<div style="font-size: 1vmax;">11th - 13th March 2016</div>
+					<div style="font-size: 1vmax;">NEW DELHI, INDIA</div>
+				</div>
+        </div>
+				<div style="width:22vw; float:right; padding: 2vmin 2vmin 2vmin 2vmin; margin-right:3vw; margin-top:1vh;"><img src="img/ieee_logo.png" class="img-responsive"></img></div>
+</div>
+    </div>
+
+<div class="container-fluid zeropad fullpage">
+<!-- Navigation -->
+    <nav class="navbar-inverse default-primary-color white-text" role="navigation" style="box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);">
+        <div class="container-fluid ">
+            <div class="navbar-header">
+                <div class="row">
+                    <div id="scrollogo" style="width:30vw; float:left; display:none; margin-left:5px; padding-left:5px;">
+</div>   
+                
+                    <div style="width:30vw; float:right">
+                <button type="button" class="navbar-toggle bcolor" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                        </div>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav nav-pills nav-justified" id="topul">
+                    <li>
+                
+                        {{#link-to 'index'}}HOME{{/link-to}}
+                    </li>
+					 <li>
+                       {{#link-to 'committee'}}COMMITTEE{{/link-to}}
+                    </li>
+					 <li>
+                
+                         {{#link-to 'callforpapers'}}CALL FOR PAPERS{{/link-to}}
+                    </li>
+					 <li>
+                         {{#link-to 'guidlines'}}GUIDELINES{{/link-to}}
+                    </li>
+                    <!--to be added later-->
+                    <!--
+					<li>
+                        {{#link-to 'program'}}PROGRAM{{/link-to}}
+                    </li>
+					-->
+                    <li>
+                        {{#link-to 'registration'}}REGISTRATION{{/link-to}}                        
+                    </li>
+					  <li>
+                {{#link-to 'contact'}}CONTACT{{/link-to}}          
+                    </li>
+					  
+                </ul>
+            </div>
+			</div>
+			</nav>
+    <!-- /.Navigation -->
+    
+</div>
+</div>
+</div>
+<div class="container-fluid col-md-10 col-md-offset-1">   
+    
+    <div class="col-md-4 whitbg mob_visible">
+        
+    </div>
+    <div class="col-md-4 sidebar material whitbg" id="impdates">
+        <center><img class="img-responsive" src="img/ribbon.png"/></center>
+
+        <center><h4><a href="mha_clearance_letter.pdf">Ministry of Home Affairs clearance Letter</a></h4></center>    
+        <center><h3>IMPORTANT DATES</h3></center>
+<ul>
+    <li><br></li>
+  <li class="light-primary-color squared">Full Paper Submission Date: <br><strike>31<sup>st</sup> December, 2015</strike><br><strong>Submissions Closed</strong></li>
+        </ul>
+       <ul>
+           <li class="light-primary-color squaret">E-mail notification of paper acceptance: <br> 13th Feb. 2016 (Review process is in the advanced Stage, we aim to convey decisions as early as possible)<br><a class="pdf" href="papers150116.pdf"><b><u>
+            List of Accepted Papers</u></b><br></a><i>(Updated on:22-02-16)</i></li>
+         <!--  <li class="light-primary-color square"><br>II<sup>nd</sup> Round: <b>30<sup>th</sup> January 2016</b> <i>(Paper submitted after 30<sup>th</sup> November 2015)</i><br><br></li>
+	       <li class="light-primary-color square">Final Paper Submission Date: <br>I<sup>st</sup> Round: <strike>15<sup>th</sup> January 2016</strike><br><b>18<sup>th</sup> January 2016</b><br>II<sup>nd</sup> Round: <b>7<sup>th</sup> February 2016</b> (Paper submitted after 30<sup>th</sup> November 2015)<br><br></li>
+	      -->
+	       <li class="light-primary-color square"><br>Last Date/ Final manuscript submission: <strong>Within two weeks of issuance of acceptance letter  </strong><br><br></li>
+           <li class="light-primary-color square">Last Date of Registration :<br><strong>27<sup>th</sup> February, 2016  </strong><br><br></li>
+        <li class="light-primary-color squareb">Date of Conference :<br><strong>11<sup>th</sup> - 13<sup>th</sup> March, 2016</strong></li>
+</ul>
+<p>
+				  All submissions should be made electronically in the pdf format 
+				  through the EDAS system.</p>
+				  
+				  
+				  <p>
+				  <span>
+				  <a href="http://edas.info/N19593" target="_blank">
+				  http://edas.info/N19593</a></span></p>
+				<hr/>
+				
+				<p>Accepted and presented papers will be published in the conference proceedings and submitted to IEEE Xplore Digital library for  publication.</p>
+        
+        <img  class="img-responsive logodim" src="img/xplore-logo.png">
+        <h4><br>IEEE Conference ID : <a href="http://www.ieee.org/conferences_events/conferences/conferencedetails/index.html?Conf_ID=37137">37137</a><br/></h4>
+
+           <hr/>
+        <div class="back-color squared">
+        <p>Selected extended papers will be considered for publications in the following journals:
+<br/><br/><a href="http://www.inderscience.com/info/ingeneral/cfp.php?id=3172">Special issue on: “Big Data, Smart Health and Health Informatics”</a>, International Journal of Telemedicine and Clinical Practices, INDERSCIENCE Publishers.
+            <br/><br/><a href="http://www.mdpi.com/journal/information/special_issues/smart_home">Special issue “Smart Home”</a>, ‘Information’ journal, MDPI, Switzerland
+        </p>
+        </div>
+        <br/>
+    <h4><strong>IEEE DELHI SECTION OVERSIGHT COMMITTEE</strong></h4>
+        Prof. Abdul Q. Ansari, SMIEEE<br />
+        Prof. M. N. Hoda, SMIEEE<br />
+        Prof. Mridula Gupta, SMIEEE<br />
+        Dr. Prerna Gaur, SMIEEE<br />
+        Dr. Manav R. Bhatnagar, SMIEEE
+	<br />
+	<h3>VENUE</h3>
+   <p>University School of Information and Communication Technology,<br />
+			  GGS Indraprastha University,<br> Dwarka Sector - 16 C, New Delhi-110078<br />
+    </p>
+        <h4><a href="hotels151215.pdf">Nearby Hotels</a></h4>
+        <h3>VENUE CONTACT</h3>
+   <p><strong>Prof. Chandra Shekhar Rai </strong><br />
+			  Conference Chair<br />
+       E-Mail: <a href="mailto:icctict@ipu.ac.in">csrai@ipu.ac.in</a><br />
+              Phone :+91-11-25302700
+    </p>
+	
+	</div>
+    <div class="col-md-8 whitebg material">
+{{outlet}}
+    </div>
+</div>
+<div class="container-fluid zeropad">
+<div class="row">
+    <div class="col-md-12  default-primary-color material">
+        <h2 style="text-align:center; color:white !important;">SUPPORTERS</h2>
+    </div>
+</div>    
+    
+<div class="row whitebg" style="padding-top:2vh">
+    <table style="width:100%">
+        <tr style="width:100%">
+            <td style="width:17%"><img src="img/supporters/GOI.png" class="image-responsive" style="width:16vw"></td>
+            <td style="width:17%"><img src="img/supporters/DI.png" class="image-responsive" style="width:16vw"></td>
+            <td style="width:13%"><img src="img/supporters/CSIR.png" class="image-responsive" style="width:13vw"></td>
+            <td style="width:16%"><img src="img/supporters/emc.png" class="image-responsive" style="width:16vw"></td>
+            <td style="width:20%"><img src="img/supporters/TCS%20mark_blue.jpg" class="image-responsive" style="width:19vw"></td>
+            <td style="width:17%"><img src="img/supporters/cisco.png" class="image-responsive" style="width:16vw"></td>
+        </tr>
+    </table>
+</div>
+    
+</div>
+</script>
+<script type='text/x-handlebars' data-template-name='index'>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12" style="padding:18px;">
+     <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/3.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="img/2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="img/1.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+          <div class="item">
+          <img class="third-slide" src="img/4.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+          <div class="item">
+          <img class="third-slide" src="img/5.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+       
+	</div>
+         
+		</div>
+        </div>
+<div class="row mob_visible">
+<div class="col-md-12">
+    <img class="img-responsive" src="img/ribbon.png"/>
+<center><h3>IMPORTANT DATES</h3></center>
+<ul>
+    <li><br></li>
+ <ul>
+           <li class="light-primary-color squaret">E-mail notification of paper acceptance: <br> 13th Feb. 2016 (Review process is in advance Stage, we aim to convey decision as early as possible)<br><a class="pdf" href="papers150116.pdf"><b><u>
+            List of Accepted Papers</u></b><br></a><i>(Updated on:22-02-16)</i></li>
+         <!--  <li class="light-primary-color square"><br>II<sup>nd</sup> Round: <b>30<sup>th</sup> January 2016</b> <i>(Paper submitted after 30<sup>th</sup> November 2015)</i><br><br></li>
+	       <li class="light-primary-color square">Final Paper Submission Date: <br>I<sup>st</sup> Round: <strike>15<sup>th</sup> January 2016</strike><br><b>18<sup>th</sup> January 2016</b><br>II<sup>nd</sup> Round: <b>7<sup>th</sup> February 2016</b> (Paper submitted after 30<sup>th</sup> November 2015)<br><br></li>
+	      -->
+	       <li class="light-primary-color square">Last Date for registration/ Final manuscript submission :<br><strong>Within two weeks of issuance of acceptance letter</strong><br><br></li>
+        <li class="light-primary-color squareb">Date of Conference :<br><strong>11<sup>th</sup> - 13<sup>th</sup> March, 2016</strong></li>
+</ul>
+</ul>    
+</div>    
+</div>
+<div class="row">
+<div class="col-md-12"  >
+<div class="row gap rorder" style="padding-bottom:10px">
+    <div class="col-md-6" >
+<h3><center>ABOUT ICCTICT 2016</center></h3>
+        <br>
+<article>
+The Conference endeavors to provide a forum for researchers, scientists, practicing engineers and academicians to present their contribution to the recent technological advances, innovation and experiences in the area of Information and Communication Technology (ICT). The conference will have four tracks and the deliberations will be in the form of accepted paper presentations, keynotes and invited talks. Moreover, the conference emphasises on the innovations to improve the quality of different stakeholders of society throught the usage of ICT, like the Digital India initiative of Government of India.
+</article>
+</div>
+    
+     <div class="col-md-6 paddingl">
+<h3><center>ABOUT DELHI</center></h3>
+         <br>
+<article>
+There is a saying for the Delhiites ‘Dillwallon ka sheher’ i.e. a city of large hearted people and it is very true. It has been the capital of many previous civilizations and each have left behind layers of mesmerizing history, culture and monuments. It is a gastronome’s pleasure garden, criss crossed by wide, leafy boulevards and it is the country’s cultural heart and political center. Delhi is a glorious city and a paradise for shoppers. Delhi’s climate is greatly influenced by its proximity to the Himalayas and the Thar Desert, causing it to experience both weather extremes. People who come to Delhi fall in love with the city.
+</article>
+    </div>    
+</div>
+
+</div>
+
+</div>
+   
+
+ <div class="row gap border" id="speakers">
+     <div class="col-md-12">
+     <h3><center>KEYNOTE SPEAKERS</center></h3>
+
+    <div class="col-md-4 lightbox">
+		<img src="img/abh.PNG"  id="t3" class="img-responsive imgdim thumbnail">
+         
+         <p><strong>Dr. Abhijit Sen<br></strong>
+
+<small>Professor<br> Computing Science,<br>Kwantlen Polytechnic University,<br>Canada</small><br><br></p>
+     </div>     
+     <div class="col-md-4 lightbox">  <img src="img/pra.PNG"  id="t6" class="img-responsive imgdim thumbnail">
+         
+         <p><strong>Dr. Prabhat. K. Mahanti<br> </strong> 
+
+<small>Professor<br> Computer Science,<br> University of New Brunswick, Canada</small><br><br></p>
+     </div>
+     <div class="col-md-4 lightbox">
+		<img src="img/san.PNG" id="t4" class="img-responsive imgdim thumbnail">
+         
+         <p><strong>Dr. Sanjay Misra<br></strong>
+<small>
+Professor<br> Computer Engineering,<br>
+
+          Covenant University,<br> Nigeria</small><br><br></p>
+     </div>
+         
+	 </div>
+	 <div class="row gap border" id="speakers">
+     <div class="col-md-4 col-md-offset-2 lightbox">  <img src="img/lui.PNG" id="t5" class="img-responsive imgdim thumbnail">
+         
+         <p><strong>Dr. Luiz Fernando Capretz<br></strong>
+
+<small>Professor & Assistant Dean <br>Software Engineering,<br> Western 
+
+          University,<br> Canada</small><br><br></p>
+     </div>
+    <div class="col-md-4 lightbox">
+     <img id="t1" src="img/bim.PNG"   class="img-responsive imgdim thumbnail">
+        
+        <p><strong>Dr Bimlesh Wadhwa<br></strong>
+
+<small>Senior Lecturer<br>School of Computing,<br>
+
+National University of Singapore, Singapore</small><br><br></p>
+     
+     </div>
+     </div>
+<br><br></div>
+    
+    
+    </script>
+	<script type='text/x-handlebars' data-template-name='keynote'>
+        
+ <div class="row">
+<div class="col-md-12">
+		<center>
+		<h3>KEYNOTE SPEAKERS</h3>
+	
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Dr. Abhijit Sen
+				Professor, Computing Science 
+				</h3>
+				<img src="img/abhi.png">
+				<p class="keynote" id="abh2">
+				Dr. Abhijit Sen holds a PhD. from McMaster University, Hamilton, Ontario, Canada and Master of Science degree from University of California, Berkeley, USA, B.Tech in Electrical Engineering from Indian Institute of Technology, Kharagpur, India. He has over 30 years of academic and administrative experience at Kwantlen Polytechnic 
+University. He served as a chair of the department for over 14 years. Abhijit has also been a visiting professor at Waikato University, Hamilton, New Zealand, and Munich University of Applied Sciences, Germany, Centre for Development of Advanced Computing, India, and North China Institute of Aerospace Engineering, China. 
+ 
+His current research interests are in the areas of Wireless Networking and Security, Radio Frequency Identification (RFID), Computing Education and Teaching Methodologies, Distributed Systems and Databases.
+
+				</p>
+				</div>
+			</div>
+         
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Dr Bimlesh Wadhwa
+				Senior Lecturer,School of Computing
+NUS, Singapore</h3>
+				<img src="img/bimlesh.png" >
+				<p class="keynote" id="bim2">
+				Dr Bimlesh Wadhwa has spent more than 24 years researching and teaching in the area of Software Engineering. She holds an MTech and a PhD in Software Engineering. Currently a Senior Lecturer, she has been a Faculty at the School of Computing, National University of Singapore since year 2000. Her current research interests includes innovative pedagogy of Software Engineering and Human Computer Interactions. She has published several papers in International conferences and journals. With extremely Rich Exposure & Experience of  Teaching, Curriculum Design, and Research  in Computer  Science makes Dr Bimlesh Wadhwa a very Unique & Rare class of Educator.
+				</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Dr. Luiz Fernando Capretz
+				Professor of Software Engineering, Assistant Dean (IT & e-Learning), Western University Canada
+				</h3>
+				<img src="img/lui.png">
+				<p class="keynote" id="lui2">
+				Dr. Luiz Fernando Capretz has vast experience in the software engineering field as practitioner, manager and educator. Before joining the University of Western Ontario (Canada), he worked at both technical and managerial levels, taught and did research on the engineering of software in Brazil, Argentina, England, Italy, Japan and the United Arab Emirates since 1981. He has authored over 200 academic papers on software engineering in leading international journals and conference proceedings. He is a senior member of IEEE, a distinguished member of the ACM, a MBTI Certified Practitioner, and a Certified Professional Engineer in Canada (P.Eng.). His current research interests are software engineering, human aspects of software engineering, software estimation, software product lines, and software engineering education. Besides work, he enjoys his family life, skiing and playing soccer. 
+				</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Dr. Prabhat. K. Mahanti
+				Professor, Computer Science , University of New Brunswick, Canada
+				</h3>
+				<img src="img/prabhat.png">
+				<p class="keynote" id="pra2">
+				Dr. Prabhat. K. Mahanti joined the University of New Brunswick, Saint John faculty in December, 2001. Previous to his appointment as Professor at UNB, Dr.Mahanti was the Chair and Professor of Computer Science and Engineering Department, Birla Institute of Technology, India.He has published over 100 research papers in referred journals and conference proceedings including book chapters. He actively participates in numerous technical conferences; including serving as a conference chair and reviewers on many of them. Currently, he is on the editorial board for the Computer and Informatics- Slovak Academy of Sciences, Slovakia, International Journal of Computing and ICT Research-Uganda, Africa, International Journal of Network and Distributed Systems-Switzerland, and the Journal of Computing and Information Technology-Croatia. He was also the Editor-in-Chief, Journal of Computer, Finland until December 2014.
+				</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Dr. Sanjay Misra
+				 Professor of Computer Engineering Covenant University, Nigeria</h3>
+				<img src="img/sanjeev.png">
+				<p class="keynote" id="san2">
+				Dr. Sanjay Misra is Full Professor of computer engineering at Covenant University, OTA, Nigeria. He has 21 years of wide experience in academic administration and researches in various universities in Asia, Europe and Africa. His current researches cover the areas of software quality, software process improvement, software project management, object oriented technologies, XML, SOA, Web services, cognitive informatics, artificial intelligence, neural network, health Informatics, e-learning, cloud computing and cyber security. He is editor in chief of the book series on Advances in IT Personals and Project management (IGI Global), author of 1 book and editor (one of) in 20 Lecture Notes in Computer Science (Springer), 5 IEEE conference proceedings. He is General Chair of 6th IEEE ICAST: 2014 and founder chair of 3 annual international workshops: Software Engineering Process and Applications (SEPA), Springer (2009-2015), Tools and Techniques in Software Development Process, IEEE (2009-2015), Software Quality, IEEE (2009), LNCS (2011-2015) and Software Metrics and Measurement, IEEE (2009). 
+				</p>
+				</div>
+			</div>
+			</center>
+    
+		</div>
+</div>
+    </script>
+
+<script type='text/x-handlebars' data-template-name='committee'>
+<div class="row rborder lborder">
+<div class="col-md-12 rorder ">
+<article>
+     <div class="row">
+        <h3><center>COMMITTEE</center></h3>
+    </div>
+<div class="row">
+				<div class="col-md-12">
+  
+  <ul>
+  <li><strong><br><br>PATRON</strong></li>
+  <li>Prof. Anil K. Tyagi,</li>
+  <li>Vice Chancellor, Guru Gobind Singh Indraprastha University, Delhi (India)</li>
+  </ul>
+  </div>
+  </div>
+  
+  <div class="row">
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>General Chair</strong></li>
+  <li>Prof. Yogesh Singh</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Conference Chair</strong></li>
+  <li>Prof. C.S. Rai</li>
+  </ul>
+  </div>
+  
+				<div class="col-md-3">
+  
+  <ul>
+  <li><br></li><li><br></li><li><strong>Organising Secretary</strong></li>
+  <li>Prof. Pravin Chandra</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  
+  <ul>
+  <li><br></li><li><br></li><li><strong>Technical Chair</strong></li>
+  <li>Prof. M.N. Doja</li>
+  </ul>
+  </div>
+  </div>
+  <div class="row">
+				<div class="col-md-6">
+  
+  <ul>
+  <li><br></li><li><br></li><li><strong>Program Co-Chairs</strong></li>
+  <li>Dr. Udayan Ghose</li>
+  <li>Dr. Bharti Suri</li>
+  <li>Dr. Amit Prakash Singh</li>
+  <li>Dr. Manoj Kumar Taleja</li>
+  </ul>
+  </div>
+				<div class="col-md-6">
+				
+  <ul>
+  <li><br></li><li><br></li><li><strong>Technical Advisory Committee</strong></li>
+  <li>Prof. Nupur Prakash</li>
+  <li>Prof. B. V. R. Reddy, USICT, GGSIPU</li>
+  <li>Prof. Navin Rajpal, USICT, GGSIPU</li>
+  <li>Prof. Pravin Chandra, USICT, GGSIPU</li>
+  <li>Prof. Arvinder Kaur, USICT, GGSIPU</li>
+  <li>Prof. Anjana Gosain, USICT, GGSIPU</li>
+  </ul>
+  </div>
+  </div>
+  <div class="row">
+				<div class="col-md-6">
+  <ul>
+  
+  <li><br></li><li><br></li><li><strong>Advisory Committee</strong></li>
+  <li>Prof. Abhijit Sen, Kwantlen Polytechnic University, Canada</li>
+  <li>Dr. Anjaneyulu Pasala, Infosys Labs, Banglore</li>
+  <li>Prof. Ajay Sharma, NIT Delhi</li>
+  <li>Prof. Arun Khosla, NIT Jalandhar</li>
+  <li>Prof. Ashok De, NIT Patna</li>
+	<li>Prof. A. K. Saini, USMS, GGSIPU, Delhi</li>
+	<li>Dr. Bimlesh Wadhwa, NUS, Singapore</li>
+	<li>Prof. Brahamjeet Singh, NIT Kurukshetra</li>
+	<li>Prof. B.S. Panda, IIT Delhi</li>
+	<li>Prof.Dinesh Kumar, GJUST, Hisar</li>
+  <li>Prof. Durgesh Kumar Mishra, Indore</li>
+  <li>Prof. Dinesh K Sharma, University of Maryland, USA</li>
+	<li>Dr. Eunice Sari, Murdoch University, Australia</li>
+	<li>Prof. Hardeep Singh, GNDU, Amritsar</li>
+	<li>Dr. Hironori Washizaki, Japan</li>
+  <li>Prof. H.M. Gupta, IIT Delhi</li>
+  <li>Prof. Kermeshu, JNU, Delhi</li>
+	<li>Prof. K.K. Bishwas, IIT Delhi</li>
+	<li>Prof. Lalit Kumar Awasthi, NIT Hamirpur</li>
+	<li>Prof. Luiz Fernando Capretz, Western University, Canada</li>
+	
+	
+	</ul>
+	</div>
+				<div class="col-md-6">
+				<ul>
+				<br><br><br>
+	<li>Prof. Manik Lal Das, DAIICT, Gandhinagar</li>
+    <li>Prof. Manu Sood, Himachal Pradesh University, Shimla</li>
+  <li>Prof. P.K. Mahanti, University of New Brunswick, Canada</li>
+	<li>Prof. M.P.S. Bhatia, NSIT, Delhi</li>
+  <li>Prof. Narayan Debnath, Winona State University, USA</li>
+	<li>Dr. Praveen Ranjan Srivastava, IIM Rohtak</li>
+	<li>Prof. Rajiv Kapoor, DTU, Delhi</li>
+  <li>Prof. Sangeeta Sabharwal, NSIT, Delhi</li>
+  <li>Prof. Sunil Kumar Khatri, Amity University</li>
+	<li>Prof. Jitendra Chhabra, NIT Kurukshetra</li>
+	<li>Prof. Nupur Prakash, IGDTUW, Delhi</li>
+	<li>Prof. P.K. Kapur, Amity University, Noida</li>
+	<li>Prof. R. C. Joshi, Chancellor, Graphic Era University, Dehradun</li>
+	<li>Prof. Shampa Chakraborty, NSIT, Delhi</li>
+	<li>Prof. Shuchita Upadhyaya, Kurukshetra University</li>
+	<li>Dr. Virender Singh, IIT Bombay</li>
+  </ul>
+    </div>
+  </div>
+  <div class="row">
+				<div class="col-md-6">
+  
+  <ul>
+  <li><br></li><li><br></li><li><strong>Technical Program Committee / Reviewers Board</strong></li>
+  <li>Dr. Abrar A. Qureshi, University of Virginia's College at Wise, USA</li><li>
+Dr. Akbar Hussain, Aalborg University, Denmark</li><li>
+Prof. Amit Garg, DCRUST, Murthal, India</li><li>
+Dr. Amrita Priyam, BIT Mesra, Ranchi, India</li><li>
+Dr. Andre Fabiano de Moraes, Federal Institute of Education, Science and Technology Catarinense, Brazil </li><li>
+Prof. Antonio Migues Seoane Pardo, University of Salamanca, Spain</li><li>
+Dr. Anurag Singh, NIT Delhi</li><li>
+Dr. Arti Noor, CDAC , India </li><li>
+Dr. Arun Sharma, IGDTUW, Delhi</li><li>
+Dr. Ashish Khare, University of Allahabad , India</li><li> 
+Dr. Ashish Rastogi, Higher College of Technology, Muscat, Oman</li><li>
+Prof. Ashok Kumar, Kentucky State University, USA</li><li>
+Dr. Asutosh Gupta, Rohilkhand University, Bareilly, India</li><li>
+Dr. Bhaskar Biswas, IIT BHU , India</li><li>
+Dr. Baishakhi Chakraborty, NIT Durgapur, India</li><li>
+Dr. Bimlesh Wadhwa, National University of Singapore, Singapore</li><li> 
+Mr. Biswapratapsingh Sahoo, National Taiwan University, Taiwan</li><li>
+Prof. Borka Jerman-Blazic, University of Ljubljana, Slovenia</li><li>
+Dr. B. K. Kanaujia, AIACTR , Delhi</li><li>
+Prof. Carlos Caldeira, University of Évora, Portugal</li><li>
+Mr. Carlos Oliveira, IFRJ, Brazil</li><li>
+Prof. Chokri Ben Amar, University of Sfax, National School of Engineers, Tunisia </li><li>
+Prof. Chuck Anderso, Colorado State University, USA</li><li>
+Dr. Cristina Portales, Universidad de València, Spain</li><li>
+Dr. David Al Dabass, Nottingham Trent University, United Kingdom</li><li>
+Dr. Deepak Kedia, GJUS&T, Hisar, India</li><li>
+Dr. Deepak Saini, Punjab University, Patiala , India</li><li>
+Prof. Dharminder Kumar, GJUST, Hisar, India</li><li>
+Dr. Dilip Kumar, DIT, Govt of India, Delhi</li><li>
+Prof. Dimitar Christozov, American University in Bulgaria, Bulgaria</li><li>
+Dr. Dimitrios Stratogiannis, Wireless and Satellite Communications Group, Greece </li><li>
+Prof. D.K. Lobiyal , JNU, India</li><li>
+Dr. Devender Tayal, IGDTUW, Delhi </li><li>
+Dr. Emre Erturk, Eastern Institute of Technology, New Zealand </li><li>
+Dr. Ernest Chulantha Kulasekere, University of Moratuwa, Sri Lanka</li><li>
+Prof. Feifei Gao, Tsinghua University, P.R. China</li><li>
+Prof. Filipe Portela, University of Minho, Portugal</li><li>
+Ms. Francesca Lonetti, ISTI-CNR, Italy</li><li>
+Dr. Georgios Drakopoulos, MDAKM Lab, Greece</li><li>
+Prof. Gheoraghe-Daniel Andreescu,Politehnica University of Timisoara, Romania</li><li>
+Dr. Goo-Rak Kwon, Chosun University, Gwangju, South Korea</li><li>
+Prof. Gurdeep S Hura, University of Maryland, Eastern Shore, USA</li><li>
+Prof. Halina Kwasnicka, University of Technology, Poland</li><li>
+Prof. Hem Chander Garg, Professor,GJUS&T, Hisar, India</li><li>
+Prof. Hoang Pham, Rutgers University, Piscataway, NJ , USA</li><li>
+Prof. Houbing Song, West Virginia University, USA</li><li>
+Prof. Hovhannes Harutyunyan, Concordia University, Canada </li><li>
+Prof. Jan-Shin Ho, National Penghu University of Science and Technology, Taiwan</li><li>
+Dr. Jasdeep, IGDTUW , Delhi</li><li>
+Prof. Jenifer Sunrise Winter, University of Hawaii at Manoa, Honolulu, USA</li><li>
+Dr. Jonatan Lerga, University of Rijeka, Croatia </li><li>
+Dr. Juan Correa, Fundación Universitaria Konrad Lorenz, Colombia</li><li>
+Dr.Juan Suardiaz-Muro, Technical University of Cartagena, Spain</li><li>
+Dr. Julian Garcia, University of Seville, Spain </li><li>
+Prof.Junichi Suzuki, University of Massachusetts, Boston, USA</li><li>
+Dr.Junyuan Zeng, FireEye Inc., USA</li><li>
+Dr. Kalpana Gupta, CDAC , India</li><li>
+Mr. Krishan Kumar, NIT Hamrirpur, India </li><li>
+Kiran Kr. Patnaik, IIITM Gwalior, India</li><li>
+Prof. Kishor Trivedi, Duke University, Durham, NC, USA</li><li>
+Ms. Kriti Saroha, CDAC, India</li><li>
+Prof. L Papic, DQM Centre, Serbia</li><li>
+Dr. Lucas Dias Hiera Sampaio, State University of Londrina, Brazil</li><li>
+Dr. Malaya Kumar Nayak, CEO, IT Buzz Ltd, United Kingdom</li><li>
+Prof. Manoj Duhan, Professor, DCRUST, Murthal, India</li><li>
+Dr. Manoj Gaur, AIACTR, Delhi</li><li>
+Dr. Marisa Maximiano, Polytechnic Institute of Leiria, Portugal </li><li>
+Dr. Mathieu Lafourcade, University of Montpellier, France</li><li>
+Dr. Mayank Aggarwal, Gurukul Kangri University, Haridwar, India</li><li>
+Prof. Michael Rabbat, McGill University, Canada</li><li>
+Prof. Min Xie, NUS, Singapore</li><li>
+Prof. Mirela Danubianu, Stefan cel Mare University of Suceava, Romania</li><li>
+Dr. Mohamed Amine Ferrag, Guelma University, Algeria</li><li>
+Dr. Mohamed Ba khouya, University of Technology of Belfort Montbeliard, France</li><li>
+Prof. Mohammad Yamin, King Abdulaziz University, Saudi Arabia</li><li>
+Dr. Monika Mehrotra, Jamia Millia Islamia, Delhi</li><li>
+Dr. Monish Chatterjee, Asansol Engg. College, India</li>
+                    </ul>
+  </div>
+  <div class="col-md-6">
+  <ul>
+      <li><br></li><li><br></li><li><br></li>
+  <li>
+Mr. Munish Kumar, CDAC, India  </li><li>
+Dr. Muzafer Saracevic, University of Novi Pazar, Serbia</li><li>
+Mr. Nagesh Narayanswany, Middle East College, Oman </li><li>
+Dr. Nagesh Poojary Kanthappa, Middle East College Knowledge Oasis, Muscat</li><li>
+Dr. Navin Kumar, Amrita University, India </li><li>
+Dr. Neetesh Saxena, Georgia Institute of Technology, USA</li><li>
+Dr. Neetesh Saxena, University of New York, Korea, South Korea</li><li>
+Ms. Neha Kapoor, CDAC, India</li><li>
+Mr. Nevin Ayadin, Istanbul University, Turkey</li><li> 
+Dr. Nidhi Goel, IGDTUW, Delhi</li><li>
+Mr. Ntima Mabanza, Central University of Technology, Free State (CUT), South Africa </li><li>
+Prof. O.P. Sahu, Professor, NIT Kurukshetra, India</li><li>
+Dr. Om Prakash Sanjwan, GJU, Hisar, India </li><li>
+Dr. Pablo Corral, Miguel Hernández University, Spain</li><li>
+Prof. Pankaj Chandna, Professor, NIT Kurukshetra, India</li><li>
+Dr. P.K. Singh, IIIT Gwalior, India</li><li>
+Dr. Partha Paul, BIT Mesra, Ranchi, India</li><li>
+Dr. Patricio Domingues, Polytechnic Institute of Leiria, Portugal</li><li>
+Dr. Pawel Karczmarek, The John Paul II Catholic University of Lublin, Institute of Mathematics and Computer Science, Poland</li><li>
+Mrs.Pilar Manzanares-Lopez, Technical University of Cartagena, Spain </li><li>
+Prof. Pinnamaneni Bhanu Prasad, Director (R&D), Kelenn Technology, France</li><li>
+Prof. Prabhaker Mateti, Wright State University, USA</li><li>
+Dr. Pradeep Bhatia, GJU, Hisar, India</li><li>
+Dr. Pradeep Kumar Gupta, University of Pretoria, South Africa</li><li>
+Dr. Pradeep Sharma, MANUU, India </li><li>
+Ms. Priti Razdan, CDAC, India</li><li>
+Dr. Rafael Uriarte, IMT Institute for Advanced Studies Lucca, Italy</li><li> 
+Dr. Rajiv Sharma, NIEC, Delhi </li><li>
+Dr. Rajeev Yaduvanshi, AIACTR, Delhi </li><li>
+Prof. Rajkumar Buyya, The University of Melbourne, Australia</li><li>
+Prof. Rama Krishna Challa, NITTTR, Chandigarh, India</li><li>
+Dr. Ramesh Kumar Vats, Associate Professor, NIT Hamirpur, India</li><li>
+Prof. R.K. Sharma, Professor, NIT Kurukshetra, India</li><li>
+Dr. Rekha Agrawal, Amity Institute of Technology, USA</li><li>
+Dr. Ritu Sibbal, NSIT, Delhi</li><li>
+Ms. Roberta Calegari, Università di Bologna, Italy </li><li>
+Mr. Romido Bezerra, IFBA, Brazil</li><li>
+Dr. Rosiane Defreitas, Federal University of Amazonas, Brazil</li><li>
+Dr. R.S. Rao, AIACTR, Delhi</li><li>
+Dr. S. Arockiasamy, University of Nizwa, Oman</li><li>
+Dr.Samad Baseer, KPK University of Engineering and Technology, Peshawar, Pakistan</li><li>
+Prof. Sandeep Arya, GJUST, Hisar, India</li><li>
+Dr. Sandeep Dhariwal, LPU, Jalandhar,India</li><li>
+Prof. Sandhya Samrasinghe, Lincoln University, New Zealand</li><li>
+Prof. Sanjay Misra, Covenant University, Nigeria</li><li>
+Dr. Sanjeev Dhull, GJUST, Hisar, India</li><li>
+Mr. Shahab Ud Din, Higher Colleges of Technologies, Sharjah, UAE</li><li>
+Dr. Shakti Singh, Khalifa University of Science Technology and Research, UAE</li><li>
+Dr. Shashi B. Rana, GNDU, Amritsar, India </li><li>
+Mrs. Shaza Hanif, KU Leuven, UAE</li><li>
+Prof. Subramaniam Ganesan, Oakland University, Rochester, USA</li><li>
+Dr. S. Inoue, Tottori University, Japan</li><li>
+Mr. Stefano Mariani, Università di Bologna, Italy</li><li>
+Prof. Steve Furber, The University of Manchester, United Kingdom</li><li>
+Dr.Sugam Sharma, Center for Survey Statistics & Methodology, Iowa State University, USA</li><li> 
+Prof. Sujata Pandey, AMITY University Noida, India</li><li>
+Dr. Suman Mann, MSIT, Delhi</li><li>
+Ms. Sunita Prasad, CDAC, India </li><li>
+Dr. Sushila Madan, LSR, DU, Delhi</li><li>
+Dr. Sushma Nagpal, NSIT, Delhi </li><li>
+Dr. Svetlana Vasileva, University of Shumen, Bulgaria</li><li> 
+Dr. Tanveer Ahmad, JMI, Delhi</li><li>
+Dr. Tharrenos Bratitsis, University of Western Macedonia, Greece</li><li> 
+Dr.Tor-Morten Gronli, Westerdals - Oslo School of Art Communication & Technology, Norway </li><li>
+Mr. Tushar Patnaik, CDAC, India</li><li>
+Prof. T.V. VijayKumar, JNU, Delhi</li><li>
+Dr. Umang singh, ITS, India</li><li>
+Dr. Vandana Niranjan, IGDTUW, Delhi</li><li>
+Dr. Varun Gupta, CCET, Chandigarh, India</li><li>
+Dr. V.B. Singh, DU, India</li><li>
+Prof. Vijay Lamba, GECT, PTU, India</li><li> 
+Prof. Vijay Nehra, Professor, BPSMV, Sonipat, India</li><li>
+Mr. Vishal Kumar, BTKIT, Dwarahat, India</li><li>
+Mr. Vishal Gupta, AIACTR, Delhi</li><li>
+Dr. Vishwas Lakkundi, Altiux Innovations, India</li><li>
+Dr. Vivek Sehgal, JUIT, Nodia, India</li><li>
+Prof. Xin Chen, Northwestern University, Chicago, USA</li><li>
+Prof. Yogesh Chaba, Professor,GJUS&T, Hisar, India</li><li>
+Prof. Yoshinobu Tamura, Yamaguchi University, Japan</li><li>
+Dr. Zhen Chen, Tsinghua University, P.R. China</li>
+  </ul>
+  </div>
+  </div>
+  <div class="row">
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Publication Committee</strong></li>
+  <li>Prof. Arvinder Kaur</li>
+  <li>Dr. V.P. Vishwakarma</li>
+  <li>Mr. Rinkaj Goyal</li>
+  <li>Mr. Rahul Johari</li>
+  <li>Dr. Vandana Nath</li>
+  <li>Ms. Priyanka Choudhry</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  
+  <ul>
+  <li><br></li><li><br></li><li><strong>Finance<br> Committee</strong></li>
+  <li>Dr. Pushpendra Singh Bharti</li>
+  <li>Mr. Sartaj Singh Sodhi</li>
+  <li>Mr. Rahul Johri</li>
+  <li>Ms. Shweta Dabbas</li>
+  <li>COF Nominee</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Registration Committee</strong></li>
+  <li>Dr. Anju Saha</li>
+  <li>Dr. Anurag Jain</li>
+  <li>Dr. Manoj Satyarthi</li>
+  <li>Mr. Chakresh Kumar</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Publicity<br> Committee</strong></li>
+  <li>Prof. Anjana Gosain</li>
+  <li>Dr. Ravinder Kumar Purwar</li>
+  <li>Ms. Jyotsana</li>
+  <li>Ms. Jaspreeti</li>
+  <li>Ms. Ruchi Sehrawat</li>
+  </ul>
+  </div>
+  </div>
+  <div class="row">
+				<div class="col-md-3">
+  
+  <ul>
+  <li><br></li><li><br></li><li><strong>Social networking and Website Committee</strong></li>
+  <li>Dr. R. Rama Kishore</li>
+  <li>Dr. Sanjay Kumar Malik</li>
+  <li>Ms. Reena Gupta</li>
+  <li>Ms. Asna Furqan</li>
+  <li>Mr. Shiv Ram Meena</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Sponsorship Committee</strong></li>
+  <li>Dr. Manoj Kumar Taleja</li>
+  <li>Ms. Mansi Jhamb</li>
+  <li>Mr. Manoj Satyarthi</li>
+  <li>Ms. Shiv Ram Meena</li>
+  <li>Ms. Shweta Dabbas</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Hospitality Committee</strong></li>
+  <li>Dr. Manoj Kumar Taleja</li>
+  <li>Mr. Parijat Mathur</li>
+  <li>Mr. Ashish Payal</li>
+  <li>Ms. Anuradha Chug</li>
+  <li>Dr. Manoj Kumar Satyarthi</li>
+  <li>Mr. Sanjib Sahu</li>
+  </ul>
+  </div>
+				<div class="col-md-3">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Accomodation and Transport Committee</strong></li>
+  <li>Dr. Sanjay Kumar Malik</li>
+  <li>Mr. Ashish Payal</li>
+  <li>Dr. Bala Krishna</li>
+  <li>Ms. Priyanka Bhutani</li>
+  <li>Mr. R.L. Ujjwal</li>
+  </ul>
+  </div></div>
+				<div class="row">
+                    <div class="col-md-12">
+  <ul>
+  <li><br></li><li><br></li><li><strong>Students Coordinators</strong></li>
+  <li>To be decided</li>
+  </ul> 
+</div>
+      </div>
+</center>
+</article>
+
+</div>
+
+</div>
+</script> 
+<script type='text/x-handlebars' data-template-name='callforpapers'>
+<div class="row rborder lborder">
+<div class="col-md-12">
+<article>
+						<div class="row gap">
+                            <br>
+                            <h3><center>CALL FOR PAPERS</center></h3>
+                            <br>
+						<p>Authors are invited to submit manuscripts reporting unpublished original research and recent 
+                            developments/theoretical considerations by <strong><strike>   31<sup>st</sup> December, 2015</strike>  (submission closed)</strong>. Research interests include the following areas but are not limited to 
+						following themes: </p>
+						</div>
+    <br>
+	<div class="row">
+        <div class="col-md-6">
+			<ul>
+                <li><strong>Digital India Initiative - Special Track</strong></li>
+              <li>E-Governance</li>
+			  <li>Mobile Governance</li>
+			  <li>Broad band Technology</li>
+			 
+			  </ul>
+
+        </div>
+        <div class="col-md-6">
+            <ul>
+             <li><br></li>
+                <li>ICT for Agricultural Development</li>
+			  <li>E-Learning</li>
+			  <li>ICT for Skill Development</li>
+            </ul>
+        </div>
+    </div>
+			
+    <div class="row">	
+			
+			<div class="col-md-6">
+			<ul>
+				<li><strong>Software Engineering</strong></li>	
+                <li>Agile Software Development</li>
+					<li>Architecture and Design</li>
+					<li>Aspect-Orientation</li>
+					<li>Cloud-Computing</li>
+					<li>Data Mining Systems</li>
+					<li>Dependability, Safety, and Reliability</li>
+					<li>Development Tools and Environments</li>
+					<li>Databases</li>
+					<li>Data Warehousing Systems</li>
+					<li>Empirical Software Engineering</li>
+					<li>Formal Methods</li>
+					<li>Human-Computer Interaction</li>
+					<li>Information Privacy and Security</li>
+					</ul>
+			</div>
+                <div class="col-md-6">
+                <ul>
+                    <li><br></li>
+                    <li>Process Modeling</li>
+					<li>Query Processing and Optimization</li>
+					<li>Programming Languages</li>
+					<li>Refactoring</li>
+					<li>Requirements Engineering</li>
+					<li>Search-Based Software Engineering</li>
+					<li>Software Economics and Metrics</li>
+					<li>Software Evolution and Maintenance</li>
+					<li>Software Reuse</li>
+					<li>Software Testing and Analysis</li>
+					<li>Software Visualization</li>
+					<li>Software Validation and Verification</li>
+					<li>Recent Trends in Software Engineering</li>
+
+
+			</ul>
+                </div>
+    </div>
+    <div class="row">
+                <div class="col-md-6">			
+			<ul>
+                <li><strong>Machine Learning and Optimization</strong></li>	
+                <li>Artificial Intelligence</li>
+					<li>Big Data Analysis, Security Issues in Big Data</li>
+					<li>Cloud / Grid / Distributed Computing</li>
+					<li>Cognitive Science</li>
+					<li>Component Analysis</li>
+					<li>Data & Knowledge Engineering</li>
+					<li>Digital Image Processing</li>
+                <li>Evolutionary Optimization</li>
+
+			</ul>
+			</div>
+        
+        <div class="col-md-6">
+        <ul>
+            
+            <li><br></li><li>Information Theoretic Learning</li>
+					<li>Intrusion Detection/Prevention Techniques</li>
+					<li>Multi Agent Systems</li>
+					<li>Multimedia Technologies</li>
+					<li>Optimization Technique</li>
+					<li>Recent Trends in Machine Learning </li>
+					<li>Robotics and Automation</li>
+					<li>Statistical Learning</li>
+            </ul>
+        </div>
+			</div>
+    <br>
+			<div class="row">
+			<div class="col-md-6">
+			<ul>
+				<li><strong>Data Communication and Computer Networking</strong></li>	
+                <li>Cryptography</li>
+					<li>High Speed Networks</li>
+					<li>Mobile Computing</li>
+					<li>Mobile Networks & Wireless LAN</li>
+					<li>Optical Networking</li>
+					<li>Network Based Applications</li>
+			</ul>	
+			</div>
+            <div class="col-md-6">
+             <ul>
+                <li><br></li>
+                 <li>Network Security</li>
+					<li>Next Generation Web</li>
+					<li>Recent Trends in Computer Networks</li>
+					<li>Wireless and Adhoc Network</li>
+					<li>Wireless Multimedia systems</li>
+                </ul>   
+            </div>    
+    </div>
+    <div class="row">
+			<div class="col-md-6">			
+			
+			<ul>
+				<li><strong>VLSI Design and Automation</strong></li>	
+                <li>Communication Circuits</li>
+					<li>Device/Circuit Simulation and Modeling</li>
+					<li>Digital Circuits and ASIC</li>
+					<li>Electronic System Level Design</li>
+					<li>Emerging Trends and Development in VLSI </li>
+					<li>Embedded Systems</li>
+					
+
+			</ul>
+			</div>
+        <div class="col-md-6">
+                <ul>
+            <li><br></li>
+            <li>Low Power CMOS Design</li>
+					<li>Logic Synthesis and Physical Design</li>
+					<li>MEMS and Sensors Design</li>
+					<li>RF, Analog and Mixed-Signal Circuits</li>
+					<li>System-on-Chip and Network-on-Chip</li>
+					<li>VLSI Testing and Reliability</li>        
+            </ul>
+            </div>
+			</div>
+    
+    		</article>			
+</div>
+</div>
+</script>
+<script type='text/x-handlebars' data-template-name='guidlines'>
+     <div class="row gap">
+    <div class="col-md-12 rborder lborder">
+<article>
+
+    <h3><CENTER>GUIDELINES</CENTER></h3>
+				  <p>
+				  
+				  All submitted papers must be the authors’ unpublished work and 
+				  should not be under consideration elsewhere. All submissions should be made electronically in the pdf format 
+				  through the EDAS system.</p>
+				  
+				  
+				  <p>
+				  <span>
+				  <a href="http://edas.info/N19593" target="_blank">
+				  http://edas.info/N19593</a></span></p>
+				  
+				  <p>
+				  
+				  All Papers submitted to the conference should be written in 
+				  English with the maximum paper length of six (6) printed pages 
+				  (10-point font). However, Three (3) additional pages are 
+				  allowed for an extra charge of USD 50 per extra page. Papers 
+				  should strictly adhere to the IEEE guidelines for manuscript 
+				  preparation. Standard IEEE conference templates for Word and 
+				  LaTeX are available at the following link: </p>
+				  
+				  <p>
+				  <span>
+				  <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html" target="_blank">
+				  http://www.ieee.org/<wbr />conferences_events/<wbr />conferences/publishing/<wbr />templates.html</a></span></p>
+				 
+				<p><b>Due to scheduled maintenance of Pdf-Express server, website will be
+down for coming two days. Final paper submission date of first round
+has been revised  from 15th January to 18th January, 2016.</b></p>
+				  <p>All the papers will be blind reviewed by a review 
+				  committee with respect to their quality, originality, and 
+				  relevance. Accepted papers will be published in the conference 
+				  proceedings provided at least one of the authors will register 
+				  and present the paper. Conference kit will be provided to 
+				  registered author/participant only. All rights of publication 
+				  of papers presented in the conference shall rest with the 
+				  Conference Organizers&nbsp;</p>
+
+    
+</article>
+</div>
+        </div>
+    </script>
+<script type='text/x-handlebars' data-template-name='program'></script>    
+<script type='text/x-handlebars' data-template-name='registration'>
+    <div class="row gap">
+    <div class="col-md-12 rborder lborder">
+<article>
+
+     <h3><center>REGISTRATION</center></h3>
+	 <br>
+						<p>All delegates are required to register for the conference as per the details:</p>
+						<table>
+						<tr>
+						<td width="45%"><p>Type of Delegate</p></td>
+						<td width="45%"><p>IEEE/CSI/IETE/ISTE Members</p></td>
+						<td width="10%"><p>Non-Members</p></td>
+						</tr>
+						<tr>
+						<td><p><strong>Indian Delegate</strong></p></td>
+						</tr>
+						<tr>
+						<td><p>Regular Authors</p></td>
+						<td><p>&#8377; 6000</p></td>
+						<td><p>&#8377; 7000</p></td>
+						</tr>
+						<tr>
+						<td><p>Student Authors</p></td>
+						<td><p>&#8377; 5000</p></td>
+						<td><p>&#8377; 6000</p></td>
+						</tr>
+						<tr>
+						<td><p><strong>International Delegate</strong></p></td>
+						</tr>
+						<tr>
+						<td><p>Regular Authors</p></td>
+						<td><p>&#36; 150</p></td>
+						<td><p>&#36; 200</p></td>
+						</tr>
+						<tr>
+						<td><p>Student Authors</p></td>
+						<td><p>&#36; 100</p></td>
+						<td><p>&#36; 150</p></td>
+						</tr>
+						</table>
+						<!--p>Fee shall be credited to the university account.<br /><sup>*</sup> Modalities to be finalized.</p-->
+			  			<p><b>For Registration form/Payment Details, Please <a href="regdetails181215.pdf">Click Here</a></b></p><br />
+			  
+			  <h3><center>INSTRUCTIONS</center></h3>
+    <BR>
+        <h4><strong>Who should attend?</strong></h4>
+                        <p>The conference shall be beneficial to researchers, practitioners, students and educators in the field of Information and Communication Technology.
+						</p> 
+        <h4><strong>Correspondence</strong></h4>
+						<p>All correspondences related to the conference including communication of papers may be sent to the conference 
+						coordinator. For any further inquiries, <a href = "#/contact">contact</a> the Conference Secratariat.</p>
+</article>
+</div>
+        </div>
+    </script>    
+<script type='text/x-handlebars' data-template-name='contact'>
+    <div class="row gap">
+    <div class="col-md-12 rorder">
+<article>
+<h3><center>CONFERENCE SECRETARIAT</center></h3>
+    <h4>Dr. Udayan Ghose<br/></h4>
+						   <table>
+						   <tr>
+						   <td>Email:</td> <td>udayan@ipu.ac.in</td>
+						   </tr>
+						   <tr>
+						   <td>Phone:</td> <td>+911125302719</td>
+						   </tr>
+						   <tr>
+						   <td>Address:</td> <td>University School of Information & Communication Technology,<br> E-405, G.G.S. Indraprastha University, Sector 16-C, Dwarka, New Delhi-110078
+						   </tr>
+						   </table>
+						</p>
+        <h4> Dr. Bharti Suri<br /></h4>
+						   <table>
+						   <tr>
+						   <td>Email:</td> <td>bhartisuri@ipu.ac.in</td>
+						   </tr>
+						   <tr>
+						   <td>Phone:</td> <td>+911125302717</td>
+						   </tr>
+						   <tr>
+						   <td>Address:</td> <td>University School of Information & Communication Technology,<br> E-302, G.G.S. Indraprastha University, Sector 16-C, Dwarka, New Delhi-110078
+						   </tr>
+						   </table>
+						</p>
+    <h4>Dr. Amit Prakash Singh<br /></h4>
+						   <table>
+						   <tr>
+						   <td>Email:</td> <td>amit@ipu.ac.in</td>
+						   </tr>
+						   <tr>
+						   <td>Phone:</td> <td>+911125302711</td>
+						   </tr>
+						   <tr>
+						   <td>Address:</td> <td>University School of Information & Communication Technology,<br> E-402, G.G.S. Indraprastha University, Sector 16-C, Dwarka, New Delhi-110078
+						   </tr>
+						   </table>
+						</p>
+    <h4>Dr. Manoj Kumar Taleja<br /></h4>
+						   <table>
+						   <tr>
+						   <td>Email:</td> <td>manojtaleja@ipu.ac.in</td>
+						   </tr>
+						   <tr>
+						   <td>Phone:</td> <td>+911125302732</td>
+						   </tr>
+						   <tr>
+						   <td>Address:</td> <td>University School of Information & Communication Technology,<br> E-309, G.G.S. Indraprastha University, Sector 16-C, Dwarka, New Delhi-110078
+						   </tr>
+						   </table>
+						</p>
+						<span class="image featured ctborder" ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3503.1519842966186!2d77.02097200000003!3d28.595216999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd08624613cd%3A0x75b127f70af28c04!2sGuru+Gobind+Singh+Indraprastha+University!5e0!3m2!1sen!2sin!4v1418183220241"   height="380" frameborder="0" style="width:100%;border:0"></iframe></span>
+
+</article>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+
+</div>
+</div> 
+    </script>   
+<script type='text/x-handlebars' data-template-name='sponsor'></script>   
+</body>
+
+</html>

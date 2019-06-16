@@ -1,0 +1,146 @@
+<HTML><HEAD><TITLE>GGS Indraprastha University</TITLE> 
+<SCRIPT language=JavaScript><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.regno.value == "")
+  {
+    alert("Please enter a value for the \"Bar Code\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+
+  if (theForm.regno.value.length < 1)
+  {
+    alert("Please enter at least 1 characters in the \"Bar Code\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-";
+  var checkStr = theForm.regno.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Bar Code\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+
+
+
+
+
+ 
+  if (theForm.regno.value.length < 1)
+  {
+    alert("Please enter at least 1 characters in the \"Bar Code\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+
+
+ var checkOK = "0123456789-";
+  var checkStr = theForm.regno.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Bar Code\" field.");
+	theForm.regno.focus();
+    return (false);
+  }
+
+  return (true);
+}
+//--></SCRIPT>
+
+
+</HEAD>
+
+<BODY bgcolor="#ECF7df" link="#804000" vlink="#804000"
+alink="#804000" topmargin="0" leftmargin="0" marginwidth="0"
+marginheight="0" onload=FrontPage_Form1.regno.focus()>
+
+<table width='100%' border='0' cellspacing=0 cellpadding=0  align=center> 
+ <tr>
+  <td width="100%"> 
+    <p align="center"><font color="#000089" face="Arial"><b><big><big>Guru Gobind Singh Indraprastha University</big></big></b></font><strong><font size="5"><br>
+      </font><font color="#00089" face="Arial" size="3">Sector 16-C, Dwarka, New Delhi-110078</font></strong>
+    <p>
+</td>
+  </tr>
+</TABLE>
+
+<br>
+
+<TABLE border="1" width="650" Align=center cellspacing=5 bordercolor="navy">
+<CENTER>
+  
+  </center><TR><TD ALIGN=CENTER>    <CENTER>            
+    <p><BR>
+        <STRONG><font size="3" COLOR="#00RR00"><u>CET-2016: RESULT</u></font></STRONG> </p>
+    <p>&nbsp;</p>
+  </center> 
+
+
+<FORM action="test.php" method="post" 
+name=FrontPage_Form1 onSubmit="return FrontPage_Form1_Validator(this)" >
+<TABLE BORDER=1 WIDTH=450 cellpadding="5">
+<tr>
+            <td width="179"><strong> Enter CET Roll No. </strong></td>
+            <td><INPUT name=regno size=15 maxlength=9></td>
+            <td>&nbsp;</td>
+</tr>
+<tr>
+  <td><strong>Select Programme</strong></td>
+  <td><select name="select" size="1">
+    <option value="101">MBA</option>
+    <option value="126">BJMC</option>
+    <option value="128">LE B.TECH.(DIPLOMA)</option>
+    <option value="129">LE B.TECH.(B.SC. GRADUATE)</option>
+    <option value="130">B.TECH (BIOTECHNOLOGY)</option>
+    <option value="131">B.TECH PROGRAMME</option>
+  </select></td>
+  <td><input name=B1 type=submit value=Submit></td>
+</tr>
+        </table>
+   </FORM>
+   <p align="center"> | <a href="http://ipu.ac.in/home/ipudisclaimer.htm">Disclaimer </a> | </p>
+</TD></TR>
+</TABLE>
+
+
+<br>
+
+<p align="center">[<a href="#" onClick="history.go(-1)">Back</a>] </p>
+</BODY></HTML>

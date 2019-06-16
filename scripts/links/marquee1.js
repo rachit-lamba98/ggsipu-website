@@ -1,0 +1,3 @@
+document.writeln('<br> <marquee > * <a href="http://ipu.ac.in/cet2013consl/btechbbamain.htm"><b><font color="#1609C1">Kindly Visit  for Online BBA / B.Tech. Counselling:- http://www.ipuadmissions.nic.in</font></b></a></marquee><br><br> <marquee bgcolor="#F7F2FF">*  <a href="http://ipu.ac.in/uset/usetwshop_190713.htm">USET announces one week <strong>Faculty Development Programme </strong>starting from 25th July 2013 on <strong> “Human Values &amp; Professional Ethics&quot; </strong></a>
+* <a href="http://ipu.ac.in/cet2013consl/seat2012status/seat2012statusmain.htm">Seat Status-2012</a>  * <a href="http://www.ipu.ac.in/newmsg/latestmsg.htm">For latest update kindly refer Notice/Circular Link.</a></marquee>');
+
